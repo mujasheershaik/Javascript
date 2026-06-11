@@ -189,6 +189,8 @@ function hello(a,b){
 }
 hello.call(obj,10,20)
 
+
+
 // 1st argument will be the object reference. 
 // Next will be the arguments to that function. 
 // In call we can send any number of arguments. 
