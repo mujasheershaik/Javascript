@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- /* (1)Introduction To CSS :-  */ -->
+                    <!-- /* CSS stands for Cascading Style Sheets.  */ -->
+                    <!-- /* CSS is used for styling html pages.  */ -->
+                    <!-- /* CSS is used to change the color, size, font, spacing, borders, and layout of web pages.  */ -->
+
+<!-- /* (2)Ways to Apply Styles to an Element :-  */ -->
+
+<!-- /* There are 3 ways to apply styles in CSS :-  */ -->
+            <!-- /* (2.1) Inline CSS  */ -->
+            <!-- /* (2.2) Internal CSS  */ -->
+            <!-- /* (2.3) External CSS  */ -->
+
+<!-- /* (2.1) Inline CSS :-  */ -->
+            <!-- /* Inline CSS means CSS is written inside the html tag using style attribute  */ -->
+
+<!-- /* (2.2) Internal CSS :-  */ -->
+            <!-- /* Internal CSS means CSS is written inside the style tag in the head section  */ -->
+
+<!-- /* (2.3) External CSS :- */ -->
+            <!-- /* External CSS means CSS is written in a separate .css file  */ -->
+
+<!-- /* (3) CSS Selectors :-  */ -->
+            <!-- /* CSS Selectors are used to choose which HTML element you want to style  */ -->
+
+<!-- /* (3.1) Element Tag Selector :-  */ -->
+            <!-- /* An Element Selector selects all HTML elements with the same tag name.  */ -->
+
+<!-- /* Example :-  */ -->
+
+<!-- /* HTML :-  */ -->
+
+<!-- /* <p> This a Paragragh</p> */ -->
+
+<!-- /* CSS :-  */
+
+/* p{
+
+} */ -->
+
+<!-- /* (3.2) ID Selectors :-  */ -->
+            <!-- /* An ID Selector selects one unique element using its id.  */ -->
+
+<!-- /* Example :-  */ -->
+
+<!-- /* HTML :-  */ -->
+
+<!-- /* <h1 id = "hi">Hello This is ID Selector</h1>  */ -->
+
+<!-- /* CSS :-  */ -->
+
+<!-- /* #hi{
+
+} */ -->
+
+<!-- /* (3.3) Class Selector :-  */ -->
+            <!-- /* A Class Selector selects all elements with the same class name. */ -->
+
+<!-- /* Example :-  */ -->
+
+<!-- /* HTML :-  */ -->
+
+<!-- /* <h1 class = "Branch">Branch Of Mechanical Engineering</h1>  */ -->
+
+<!-- /* CSS :-  */
+
+/* .Branch{ -->
+
+<!-- } */ -->
+
+<!-- /* (3.4) Universal Selector :-  */
+            /* The Universal Selector selects every element on the page.  */ -->
+
+<!-- /* Syntax :-  */ -->
+
+<!-- /* *{
+    margin : 0;
+} */ -->
+
+<!-- /* (3.5) Group Selector :- */ -->
+            <!-- /* A Group Selector applies to the Multiple Elements.  */ -->
+            <!-- /* It is applied on separately on multiple classes, ids, tags.  */ -->
+            <!-- /* It can be applied on combination of id, class, tags. */ -->
+
+<!-- /* Example :-  */ -->
+
+<!-- HTML :-  -->
+
+<!-- <h1>Mujasheer</h1> -->
+
+<!-- <h2 class="student record">Mechanical Engineering</h2> -->
+
+<!-- <h3 id="rollnumber">101</h3> -->
+
+<!-- CSS :-  -->
+
+<!-- h1, #rollnumber, .student record{
+
+} -->
+
+<!-- h1,p{
+
+} -->
+
+<!-- (3.6) Descendant Selector :-  -->
+            <!-- A Descendant Selector selects element inside the another element.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div>
+    <p>Hi Good afternoon</p>
+</div> -->
+
+<!-- CSS :-  -->
+
+<!-- div p{
+color: blue
+} -->
+
+<!-- (3.7) Child Selector :-  -->
+            <!-- A Child Selector selects only the direct child element  -->
+
+<!-- CSS :-  -->
+
+<!-- div >p{
+    color: red;
+} -->
+
+<!-- (3.8) Adjacent Sibling Element :-  -->
+            <!-- Selects the next element immediately after another element.  -->
+
+<!-- CSS :-  -->
+
+<!-- h1+p{
+    color:navyblue
+} -->
+
+<!-- (3.9) General Sibling Selector :-  -->
+            <!-- Selects the sibling elements that come after another element.  -->
+
+<!-- CSS :-  -->
+
+<!-- h1 ~p{
+    color:black 
+} -->
+
+<!-- (4) CSS Borders :-  -->
+
+<!-- (4.1) Border :-  -->
+            <!-- A border is a line that appears around an HTML Element.  -->
+            
+<!-- Syntax :-  -->
+
+<!-- h1{
+    border: 2px solid red
+} -->
+
+<!-- (4.2) Border Width :-  -->
+            <!-- 2px is the thickness (width) of the border.  -->
+
+<!-- Example :-  -->
+
+<!-- h1{
+    border-width: 4px;
+} -->
+
+<!-- (4.3)Border Style :-  -->
+            <!-- It defines the style of the border.  -->
+
+<!-- Border styles are:-  -->
+
+<!-- (4.3.1) Solid - Continous Line -->
+<!-- (4.3.2) Dotted - Dotted line  -->
+<!-- (4.3.3) Dashed - small dashes  -->
+<!-- (4.3.4) Double - Double line  -->
+<!-- (4.3.5) Groove - 3d groove effect -->
+<!-- (4.3.6) Ridge - Raised Border  -->
+<!-- (4.3.7) Inset - Looks pressed inside  -->
+<!-- (4.3.8) Outset - Looks pressed outside  -->
+<!-- (4.3.9) None - No Border  -->
+<!-- (4.3.10) Hidden - Hidden Border  -->
+
+<!-- (4.4) Border Color :-  -->
+            <!-- Sets the color of the border.  -->
+
+<!-- Example :-  -->
+<!-- Border- red -->
+
+<!-- h1{
+    border: 2px solid red
+} -->
+
+<!-- (4.5) Border-Radius :-  -->
+            <!-- Rounds the corners of the Border.  -->
+
+<!-- Example :-  -->
+
+<!-- Border-radius : 20px  -->
+
+<!-- (4.6) Border For Each side :-  -->
+
+<!-- (4.6.1) Border-Top :-  -->
+            <!-- It applies border only on the Top -->
+
+<!-- Syntax :-  -->
+
+<!-- border-top :- 2px solid blue  -->
+
+<!-- (4.6.2) Border-Right :-  -->
+            <!-- It applies border only on the Right -->
+
+<!-- Syntax :-  -->
+
+<!-- border-right :- 2px solid blue  -->
+
+<!-- (4.6.3) Bottom-Border :-  -->
+            <!-- It applies border only to the Bottom -->
+
+<!-- Syntax :-  -->
+
+<!-- border-bottom :- 2px solid blue  -->
+
+<!-- (4.6.4) Border-Left :-  -->
+            <!-- It applies border only on the Left-->
+
+<!-- Syntax :-  -->
+
+<!-- border-left :- 2px solid blue  -->
+
+<!-- (4.7) Backgrounds :-  -->
+            <!-- A Background is the area behind the content of an HTML Element. We can add a image or color to it.  -->
+
+<!-- (4.7.1) Background-color:-  -->
+            <!-- Sets the background color to an Element.  -->
+
+<!-- Example:-  -->
+
+<!-- background-color: blue  -->
+
+<!-- (4.7.2) Background-image :-  -->
+            <!-- Adds image to the background.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background-image : url("")  -->
+
+<!-- (4.7.3) Background-Repeat:-  -->
+            <!-- Repeats the background image -->
+
+<!-- Syntax:-  -->
+<!-- background-repeat :repeat  -->
+
+<!-- There are different types of Background-Repeat. They are :-  -->
+
+<!-- (4.7.3.1) Repeat - It repeats image in all directions.  -->
+<!-- (4.7.3.2) No-Repeat - It shows image only once.  -->
+<!-- (4.7.3.3) Repeat-x - It repeats image horizantly.  -->
+<!-- (4.7.3.4) Repeat-y - It repeats image vertically.  -->
+
+<!-- (4.8) Background-position :-  -->
+            <!-- It sets the position of the background image.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background-position : top right;  -->
+
+<!-- Types of Background-posions are :-  -->
+
+<!-- (4.8.1) Left  -->
+<!-- (4.8.2) Right -->
+<!-- (4.8.3) Top -->
+<!-- (4.8.4) Bottom -->
+<!-- (4.8.5) Center -->
+
+<!-- (4.9) Background-size :-  -->
+            <!-- It describes the size of the bottom.  -->
+
+<!-- There are two types of Background-size. They are :-  -->
+
+<!-- (4.10) Background-cover :-  -->
+            <!-- Makes the Image cover the entire background.  -->
+
+<!-- (4.11) Background-contain :-  -->
+            <!-- It displays the whole image without cropping it.  -->
+
+<!-- (4.12) Background Attachment :-  -->
+
+<!-- (4.12.1) Background-fixed :-  -->
+        <!-- It keeps the background image while scrolling.  -->
+
+<!-- Syntax :-  -->
+<!-- background-attachment : fixed  -->
+
+<!-- (4.12.2) Background-Scroll :-  -->
+            <!-- Background moves with the page.  -->
+
+<!-- Syntax :-  -->
+<!-- background-attachment : scroll  -->
+
+<!-- (4.13) Background shorthand :-  -->
+            <!-- Its shorthand for all the properties.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background : red url("application form.jpg") no-repeat center  -->
+
+<!-- red - color  -->
+
+<!-- url("application form.jpg") - Background image  -->
+
+<!-- No-repeat - Image will not repeat  -->
+
+<!-- (5)Width and Height :-  -->
+            <!-- Width and Height are CSS properties is used to set the size of an HTML Element.  -->
+
+<!-- (5.1) Width :-  -->
+            <!-- It sets the width(Horizantal size) of an Element.  -->
+
+<!-- Syntax :-  -->
+<!-- Width : 300px -->
+
+<!-- (5.2) Height :-  -->
+            <!-- It sets the Height(vertical size) of an Element.  -->
+
+<!-- Syntax :-  -->
+<!-- Height : 400px;  -->
+
+<!-- Units used in CSS :-  -->
+
+<!-- (5.2.1) px - Pixels  -->
+<!-- (5.2.2) % - Percentage of the parent element  -->
+<!-- (5.2.3) vw - viewport width  -->
+<!-- (5.2.4) vh - viewport height  -->
+<!-- (5.2.5) auto - Automatic size  -->
+
+</body>
+</html>

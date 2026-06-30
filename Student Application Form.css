@@ -1,0 +1,73 @@
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background:#f2f2f2;
+}
+
+/* Id selector  */
+#title{
+    text-align:center;
+    color:white;
+    background:darkblue;
+    padding:15px;
+}
+
+/* Class-Selector  */
+.form-container{
+
+    width:60%;
+    background:white;
+    margin:30px auto;
+    padding:25px;
+
+    border:5px solid navy;
+    border-radius:20px;
+
+}
+
+/* Group Selector */
+label,h2{
+    color:darkgreen;
+}
+
+/* Input Styling */
+input,select,textarea{
+
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+
+    border:2px solid gray;
+    border-radius:10px;
+
+}
+
+/* Hover Selector */
+input:hover,
+select:hover,
+textarea:hover{
+
+    border:2px solid blue;
+
+}
+
+button{
+
+    background:green;
+    color:white;
+
+    border:none;
+    padding:12px;
+    width:100%;
+
+    border-radius:10px;
+    font-size:18px;
+
+}
+
+button:hover{
+
+    background:red;
+    cursor:pointer;
+
+}
