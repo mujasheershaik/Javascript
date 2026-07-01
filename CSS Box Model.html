@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+<!-- (1)CSS Box Model :-  -->
+            <!-- Every HTML Element is treated like a Rectangular Box in CSS. This box consists of Content, Padding,  -->
+            <!-- Border, and Margin.   -->
+
+<!-- It consists of Four. They are :-  -->
+<!-- (1.1) Content.  -->
+<!-- (1.2) Padding.  -->
+<!-- (1.3) Border.  -->
+<!-- (1.4) Margin.  -->
+
+<!-- (1.1) Content :-  -->
+            <!-- Content is the actual text, image, video inside the HTML Element.  -->
+
+<!-- Example :-  -->
+
+<!-- <h1>Hello World</h1> -->
+
+<!-- (1.2) Padding :-  -->
+            <!-- Padding is the space between the content and the border.  -->
+
+<!-- Example :-  -->
+
+<!-- padding : 10px;  -->
+<!-- It will create extra space between the content and border.  -->
+
+<!-- (1.3) Border :-  -->
+            <!-- Border is the line around the content and padding.  -->
+
+<!-- Example :-  -->
+
+<!-- border: 2px solid black  -->
+<!-- It will create a 2px thickness line with black color around the content and padding -->
+
+<!-- (1.4) Margin :-  -->
+            <!-- Margin is the space outside the border.  -->
+            <!-- It creates distances between two elements.  -->
+
+<!-- Example :-  -->
+
+<!-- margin : 20px  -->
+
+<!-- Box Model Diagram :-  -->
+
+            <!-- Margin  -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Border -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Padding -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Content -->
+
+<!-- (1.5) Width and Height :-  -->
+            <!-- Width describes the width of the element. -->
+            <!-- Height describes the height of the element.  -->
+
+<!-- Example :-  -->
+
+<!-- #container{
+    width: 100px;
+    height: 300px;
+} -->
+
+<!-- A container contains 100px width and 300px height.  -->
+
+<!-- (1.6) Box - Sizing (Content - Box and Border - Box) :-  -->
+            <!-- Box - Sizing controls how the browser calculates an element's width and height.  -->
+            
+<!-- Box - Sizing are of two types. They are :-  -->
+
+<!-- (1.6.1) Content - Box.  -->
+<!-- (1.6.2) Border Box.  -->
+
+<!-- (1.6.1) Content - Box :-  -->
+            <!-- Only the content size is considered for width and height.  -->
+            <!-- Width/height apply only to content.  -->
+            <!-- Padding and border are added outside the specified width/height.  -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+    box-sizing : content-box;
+    width : 200px;
+    padding: 20px;
+    border: 5px solid black
+} -->
+
+<!-- Content = 200px  -->
+<!-- Padding = 20 + 20 = 40px -->
+<!-- Border = 5 + 5 = 10 px  -->
+
+<!-- Total width = 250 px  -->
+
+<!-- (1.6.2) Border Box :-  -->
+            <!-- The Width includes :- -->
+            <!-- (*) Content  -->
+            <!-- (*) Padding  -->
+            <!-- (*) Border  -->
+    <!-- The Total width remains equal to specified width.  -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+    padding : 20px;
+    border : 5px solid black;
+    box-sizing : border-box;
+} -->
+
+<!-- content + padding + border = 200px  -->
+<!-- Total width = 200px -->
+
+<!-- (1.7) Margin Collapse :-  -->
+            <!-- Margin Collapse happens when two vertical margins touch or meet eachother.  -->
+            <!-- Instead of adding together, the browser uses only the larger margin.  -->
+
+<!-- Example :-  -->
+
+<!-- .box1{
+    margin-bottom : 40px;
+} -->
+
+<!-- .box2{
+    margin-top : 20px;
+} -->
+
+<!-- It won't calculate like 40px + 20 px = 60 Px -->
+<!-- It used the larger value margin-bottom 40px  -->
+
+<!-- (1.8) Overflow :-  -->
+            <!-- Overflow controls what happens when the content is larger than its container.  -->
+
+<!-- There are Four types of Overflow. They are :-  -->
+<!-- (1.8.1) Overflow Visible.  -->
+<!-- (1.8.2) Overflow Hidden. -->
+<!-- (1.8.3) Overflow Scroll.  -->
+<!-- (1.8.4) Overflow Auto.  -->
+
+<!-- (1.8.1) Overflow Visible :-  -->
+            <!-- Content comes outside the box.  -->
+            
+<!-- (1.8.2) Overflow:hidden :-  -->
+            <!-- Extra content is hidden.  -->
+
+<!-- (1.8.3) Overflow:scroll :-  -->
+            <!-- Scrollbars always appears.  -->
+
+<!-- (1.8.4) Overflow: auto :-  -->
+            <!-- Scrollbars appears only when needed.  -->
+
+<!-- (1.9) Outline :-  -->
+            <!-- Outline is a line drawn outside the border.  -->
+            <!-- Unlike a border, it doesn't increase the element's size. -->
+            <!-- And also doesn't affect the box size or layout. -->
+            <!-- It's a decorative line outside border.  -->
+
+<!-- Example :-  -->
+
+<!-- button{
+    outline : 2px solid green;
+} -->
+
+<!-- This draws a green outline around the button without changing it's dimensions. -->
+
+</body>
+</html>
