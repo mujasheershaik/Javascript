@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.box{
+    flex: 1;
+    background: violet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+/* Media queries for Mobile and Laptop :- */
+
+@media (max-width :480px){
+/*  */
+    .container{
+        /* (1) Change Layouts */
+        flex-direction: column;
+    }
+
+    .box{
+        background: orange;
+    }
+    /* (2) Resize Text  */
+    h1{
+        font-size: 22px;
+    }
+    /* (3) Hide or show Elements  */
+    .ads{
+        display: none;
+    }
+}

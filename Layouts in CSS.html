@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- (2) Layouts in CSS :-  -->
+            <!-- Layouts in CSS are the techniques and properties used to arrange elements on a webpage.  -->
+            <!-- They define how boxes (Elements) are positioned, sized, and aligned relatively to eachother and  -->
+            <!-- the browser window. -->
+            <!-- A CSS Layout is the way HTML Elements are arranged and positioned on a web page.  -->
+            <!-- Layout decides where each element appears on the webpage.  -->
+
+<!-- Example :-  -->
+
+<!-- (*) Where the header is placed.  -->
+<!-- (*) Where the navigation menu appears.  -->
+<!-- (*) Where the main content is displayed.  -->
+<!-- (*) Where the sidebar is placed. -->
+<!-- (*) Where the footer is placed.  -->
+
+<!-- There are Four types of Layouts used in CSS. They are  -->
+<!-- (2.1) Display Property.  -->
+<!-- (2.2) Position Property.  -->
+<!-- (2.3) Float and Clear  -->
+<!-- (2.4) Flex Box.  -->
+<!-- (2.5) CSS Grid.  -->
+
+<!-- (2.1) Display Property :-  -->
+            <!-- The display property tells the browser how the HTML Element should appear and behave on a web page.  -->
+
+<!-- It controls :-  -->
+            <!-- (*) Whether the element starts on a new line. -->
+            <!-- (*) How much width the element takes.  -->
+            <!-- (*) Whether the width and height can be applied.  -->
+            <!-- (*) How the elements are arranged with other elements.  -->
+
+<!-- There are Four Types of Display Properties. They are :-  -->
+<!-- (2.1.1) Block.  -->
+<!-- (2.1.2) Inline.  -->
+<!-- (2.1.3) Inline-block.  -->
+<!-- (2.1.4) None.  -->
+
+<!-- (2.1.1) Block :-  -->
+            <!-- Starts on a New Line.  -->
+            <!-- Takes the full width Available.  -->
+            <!-- We can set width and height.  -->
+            <!-- Other elements move below.  -->
+
+<!-- Example :-  -->
+
+<!-- <div></div> -->
+<!-- <p></p> -->
+<!-- <h1></h1>  -->
+<!-- <section></section> -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box1">BOX 1</div>  -->
+<!-- <div class="box2">BOX 2</div> -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    display: block;
+    border: 2px solid black;
+} -->
+
+<!-- Output :-  -->
+
+                <!-- BOX 1 -->
+
+                <!-- BOX 2  -->
+
+<!-- Both Boxes appears on different lines.  -->
+
+<!-- (2.1.2) Inline :-  -->
+            <!-- It doesn't start on a new line.  -->
+            <!-- Takes only the required width.  -->
+            <!-- Width and Height usually won't work in Inline.  -->
+            <!-- Appears beside the other inline elements.  -->
+
+<!-- Examples :-  -->
+
+<!-- <span></span> -->
+<!-- <a></a> -->
+<!-- <strong></strong> -->
+
+<!-- HTML :-  -->
+
+<!-- <span>HTML</span> -->
+<!-- <span>JS</span> -->
+<!-- <span>CSS</span> -->
+<!-- <span>React JS</span> -->
+
+<!-- Output :-  -->
+
+<!-- HTML        JS      CSS         React JS  -->
+
+<!-- (2.1.3) Inline - Block :-  -->
+            <!-- Inline - Block it combines of inline and block.  -->
+            
+            <!-- (*) stays on the same line.  -->
+            <!-- (*) Allows Height and Width.  -->
+            <!-- (*) Allow padding and margin.  -->
+    
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">HTML</div> -->
+<!-- <div class="box">CSS</div> -->
+<!-- <div class="box">JS</div> -->
+<!-- <div class="box">React JS</div> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    display : inline-block;
+    width : 120px;
+    height : 50px;
+    border : 2px solid black;
+} -->
+
+<!-- Output :-  -->
+
+            <!-- HTML ===> CSS ===> JS ===> React JS  -->
+
+<!-- Boxes stay in the sameline and also height and width works.  -->
+
+<!-- (2.1.4) None :-  -->
+            <!-- Display : None - Completely removes the element from the webpage. -->
+
+            <!-- The Element :-  -->
+            <!-- (*) Its not visible.  -->
+            <!-- (*) Doesn't occupy space.  -->
+            <!-- (*) Behaves as if it doesn't exists.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <p>Hello</p>  -->
+
+<!-- <p class="notvisible">CSS</p> -->
+
+<!-- <p>World</p> -->
+
+<!-- CSS :-  -->
+
+<!-- .notvisible {
+    display : none;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Hello  -->
+
+<!-- World  -->
+
+<!-- (2.2) Position Property :-  -->
+            <!-- The Position Property tell the browser how an HTML Element is placed on the web page.  -->
+            <!-- It works with these properies :-  -->
+            <!-- (*) Top  -->
+            <!-- (*) Right  -->
+            <!-- (*) Left  -->
+            <!-- (*) Bottom  -->
+            <!-- These properties move the element from its normal position. -->
+
+<!-- Syntax :-  -->
+
+<!-- selector{
+    position : value;
+} -->
+
+<!-- There are 5 types of Position Property. They are :-  -->
+
+<!-- (2.2.1) Static -->
+<!-- (2.2.2) Relative -->
+<!-- (2.2.3) Absolute  -->
+<!-- (2.2.4) Fixed  -->
+<!-- (2.2.5) Sticky  -->
+
+<!-- (2.2.1) Static (Default) :-  -->
+            <!-- Static is the default position of every html page.  -->
+            <!-- Elements stay in the normal document flow.  -->
+            <!-- Top, Left, Right and Bottom do not work.  -->
+
+<!-- Example :- -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">BOX</div>  -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position : static;
+    top : 50px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The BOX doesn't move, because top has no effect on static element.  -->
+
+<!-- (2.2.2) Relative :-  -->
+            <!-- A relative element stays in the normal document flow, but we can move it using top, right, left   -->
+            <!-- and bottom.  -->
+            <!-- It's original place is still reserved.  -->
+            
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">BOX</div> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position:relative;
+    left:40px;
+    top:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Before :-  -->
+
+<!-- BOX  -->
+
+<!-- After :-  -->
+
+            <!-- BOX -->
+
+<!-- The box moves 40px to the right and 20px down, but its original position is still kept.  -->
+
+<!-- (2.2.3) Absolute :-  -->
+            <!-- An absolute element is removed from the normal document flow.  -->
+            <!-- It is positioned relative to its nearest positioned parent  -->
+            <!-- (a parent with position: relative, absolute, fixed, or sticky). -->
+            <!-- If no such parent exists, it is positioned relative to the page.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="parent"> -->
+    <!-- <div class="child">Box</div> -->
+<!-- </div> -->
+
+<!-- CSS :-  -->
+
+<!-- .parent{
+    position:relative;
+    width:300px;
+    height:200px;
+    border:2px solid black;
+} -->
+
+<!-- .child{
+    position:absolute;
+    top:20px;
+    right:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The child is placed 20px from the top and 20px from the right of the parent.  -->
+
+<!-- (2.2.4) Fixed :-  -->
+            <!-- A fixed element stays in the same place even when the page is scrolled.  -->
+            <!-- It is positioned relative to the browser window.  -->
+            <!-- Common uses: -->
+                        <!-- Navigation bars -->
+                        <!-- Chat buttons -->
+                        <!-- BACK TO TOP buttons -->
+            
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Even when we scroll, the box remains at the bottom-right corner. -->
+
+<!-- (2.2.5) Sticky :-  -->
+            <!-- A sticky element behaves like relative until a certain scroll position is reached. -->
+            <!-- Then it behaves like fixed. -->
+            <!-- It is commonly used for: -->
+                        <!-- (*) Sticky headers -->
+                        <!-- (*) Section Titles  -->
+                        <!-- (*) Navigation menus  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .header{
+    position:sticky;
+    top:0;
+    background:blue;
+    color:white;
+} -->
+
+<!-- Output :-  -->
+
+<!-- At the top of the page, the header is in its normal position.  -->
+<!-- As you scroll, once it reaches the top, it stays there. -->
+
+<!-- (2.3) Float and Clear :-  -->
+            <!-- Before Flexbox and CSS Grid, developers used float to create layouts like side-by-side columns.  -->
+            <!--(2.3.1) Float :-  -->
+                        <!-- The float property is used to move an element to the left or right of its container,  -->
+                        <!-- allowing other content (like text or other elements) to wrap around it. -->
+                        <!-- Float is used to place elements side by side.  -->
+
+<!-- Syntax :-  -->
+
+<!-- selector{
+    float:left;
+}  -->
+
+    <!-- (OR) -->
+
+<!-- selector{
+    float:right;
+}  -->
+
+<!-- There are mainly four types :- -->
+<!-- (2.3.1.1)Left -->
+<!-- (2.3.1.2)Right -->
+<!-- (2.3.1.3)None -->
+<!-- (2.3.1.4)Inherit (less commonly used) -->
+
+<!-- (2.3.1.1) Float : Left :-  -->
+            <!-- Moves the element to the left side of its parent container. -->
+            <!-- Other content appears on the right. -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">Box</div> -->
+<!-- <p>Hello CSS Layout</p> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+width:100px;
+height:100px;
+background:red;
+float:left;
+margin-right:10px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The box moves to the left, and the text wraps beside it.  -->
+
+<!-- (2.3.1.2) Float : Right :-  -->
+            <!-- Moves the element to the right side. -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+float:right;
+} -->
+
+<!-- (2.3.1.3) Float : None :-  -->
+            <!-- Removes floating.  -->
+            
+<!-- Example :-  -->
+
+<!-- .box{
+float:none;
+} -->
+
+<!-- Examples of Float :-  -->
+
+<!-- When all child elements are floated, the parent container may collapse (its height becomes zero).  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container"> -->
+<!-- <div class="box"></div> -->
+<!-- </div> -->
+
+<!-- CSS:-  -->
+
+<!-- .container{
+border:2px solid black;
+} -->
+
+<!-- .box{
+float:left;
+width:100px;
+height:100px;
+background:red;
+} -->
+
+<!-- (2.3.2) Clear :-  -->
+            <!-- The clear property stops elements from wrapping around floated elements.  -->
+            
+<!-- Syntax :-  -->
+
+<!-- CSS :- -->
+
+<!-- clear:left;  -->
+    <!-- (OR) -->
+<!-- clear:right;  -->
+    <!-- OR  -->
+<!-- clear:both; -->
+
+<!-- There are 3 types of Clear :-  -->
+
+<!-- (2.3.2.1) Clear : Left  -->
+<!-- (2.3.2.2) Clear : Right  -->
+<!-- (2.3.2.3) Clear : Both  -->
+
+<!-- (2.3.2.1) Clear:Left :-  -->
+            <!-- Stops floating on the left.  -->
+    
+<!-- Example :-  -->
+
+<!-- .clear{
+clear:left;
+} -->
+
+<!-- (2.3.2.2) Clear:Right :-  -->
+            <!-- Stops floating on the right.  -->
+
+<!-- Example :-  -->
+
+<!-- .clear{
+clear:right;
+} -->
+
+<!-- (2.3.2.3) Clear : both :-  -->
+            <!-- Stops both left and right floating.  -->
+            <!-- Its used most commonly.  -->
+
+<!-- Example :-  -->
+
+<!-- .clear{
+clear:both;
+} -->
+
+<!-- Examples :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box"></div>
+<div class="clear"></div>
+<p>Hello CSS</p> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+float:left;
+width:100px;
+height:100px;
+background:red;
+} -->
+
+<!-- .clear{
+clear:both;
+} -->
+
+<!-- (2.4) Flexbox :-  -->
+            <!-- Flexbox (Flexible Box Layout) is a CSS layout model used to arrange elements in a row or column easily.  -->
+            <!-- It helps us :-  -->
+                        <!-- Align items. -->
+                        <!-- Distribute space between items. -->
+                        <!-- Create responsive layouts. -->
+                        <!-- Center elements horizontally and vertically. -->
+
+<!-- There are 12 types of Flex Box. They are :-  -->
+
+<!-- (2.4.1) Flex Container -->
+<!-- (2.4.2) Flex Items -->
+<!-- (2.4.3) Flex-direction -->
+<!-- (2.4.4) Justify-content -->
+<!-- (2.4.5) Align-items -->
+<!-- (2.4.6) Align-content -->
+<!-- (2.4.7) Flex-wrap -->
+<!-- (2.4.8) Gap -->
+<!-- (2.4.9) Order -->
+<!-- (2.4.10) Flex-grow -->
+<!-- (2.4.11) Flex-shrink -->
+<!-- (2.4.12) Flex-basis -->
+
+<!-- (2.4.1) Flex Container :-  -->
+            <!-- A Flex Container is the parent element. -->
+            <!-- To make a container flexible, use: -->
+
+<!-- Syntax :-  -->
+
+<!-- .container{
+    display:flex;
+} -->
+
+<!-- Examples :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div> -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+} -->
+
+<!-- .box{
+    width:100px;
+    height:100px;
+    background:skyblue;
+    margin:10px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The boxes appear in one row.  -->
+
+<!-- (2.4.2) Flex-Items :-  -->
+            <!-- The children inside a Flex Container are called Flex Items.  -->
+
+<!-- Example :-  -->
+
+<!-- display:flex affects only direct children.  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container"> -->
+<!-- <div>Apple</div> -->
+<!-- <div>Banana</div> -->
+<!-- <div>Orange</div> -->
+
+<!-- Only <div> becomes a Flex Item. -->
+
+<!-- <p> does not. -->
+
+<!-- (2.4.3) Flex-direction :-  -->
+            <!-- Flex-direction defines direction of flex items inside a container.  -->
+            
+<!-- Syntax :-    -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+display:flex;
+flex-direction: row;
+} -->
+
+<!-- There are 4 types of Flex-direction. They are ;- -->
+
+<!-- (2.4.3.1) Row (default) -->
+<!-- (2.4.3.2) Row-reverse -->
+<!-- (2.4.3.3) Column -->
+<!-- (2.4.3.4) Column-reverse -->
+
+<!-- (2.4.4) Justify-content :-  -->
+            <!-- Justify-content aligns items horizontally (main axis). -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+    justify-content: center;
+} -->
+
+<!-- There are 6 types of Justify Content. They are :-  -->
+
+<!-- (2.4.4.1) Flex-start -->
+<!-- (2.4.4.2) Flex-end -->
+<!-- (2.4.4.3) Center -->
+<!-- (2.4.4.4) Space-between -->
+<!-- (2.4.4.5) Space-around -->
+<!-- (2.4.4.6) Space-evenly -->
+
+<!-- Example :-  -->
+
+<!-- .container{
+    display:flex;
+    justify-content: space-between;
+} -->
+
+<!-- Output :-  -->
+    <!-- A           B           C  -->
+
+<!-- (2.4.5) Align-items :-  -->
+            <!-- Align-items aligns items vertically (cross axis).  -->
+
+<!-- Syntax :-  -->
+
+<!-- .container{
+    display:flex;
+    align-items: center;
+} -->
+
+<!-- There are 5 types of Align-items. They are :-  -->
+<!-- (2.4.5.1) Stretch (default) -->
+<!-- (2.4.5.2) Flex-start -->
+<!-- (2.4.5.3) Flex-end -->
+<!-- (2.4.5.4) Center -->
+<!-- (2.4.5.5) Baseline -->
+
+<!-- Example :-  -->
+
+<!-- .container{
+    display:flex;
+    height:200px;
+    align-items:center;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Items center vertically. -->
+
+<!-- (2.4.6) Align-content :-  -->
+            <!-- Used when items wrap into multiple lines. -->
+            <!-- It controls spacing between rows. -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+    flex-wrap:wrap;
+    align-content: space-between;
+} -->
+
+<!-- (2.4.7) Flex-wrap :-  -->
+            <!-- Controls whether items stay in one line or wrap.  -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+    flex-wrap: wrap;
+} -->
+
+<!-- There are 3 types of Flex-wrap. They are :-  -->
+<!-- (2.4.7.1) Nowrap (default) -->
+<!-- (2.4.7.2) Wrap -->
+<!-- (2.4.7.3) Wrap-reverse -->
+
+<!-- Example :-  -->
+
+<!-- .container{
+    display:flex;
+    flex-wrap: wrap;
+} -->
+
+<!-- Output :-  -->
+
+            <!-- A           B           C  -->
+            <!-- D           E           F -->
+
+<!-- (2.4.8) Gap :-  -->
+            <!-- Gap adds space between flex items. -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+    gap:20px;
+} -->
+
+<!-- (2.4.9) Order :-  -->
+            <!-- Order controls the visual order of flex items (without changing HTML). -->
+            
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .item{
+    order: 1;
+} -->
+
+<!-- Examples :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+</div>
+</div> -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+}
+.a{
+    order:3;
+}
+.b{
+    order:1;
+}
+.c{
+    order:2;
+} -->
+
+<!-- Output :-  -->
+
+            <!-- B           C           A  -->
+
+<!-- (2.4.10) Flex-grow :-  -->
+            <!-- Flex-grow defines how much an item will grow compared to others. -->
+            
+<!-- Syntax :-  -->
+
+<!-- .item{
+    flex-grow: 1;
+} -->
+
+<!-- Examples :-  -->
+
+<!-- .a{
+    flex-grow: 1;
+}
+.b{
+    flex-grow: 2;
+} -->
+
+<!-- Output :-  -->
+
+            <!-- A       BB  -->
+
+<!-- B grows more than A  -->
+
+<!-- (2.4.11) Flex-shrink :-  -->
+            <!-- Flex-shrink defines how much an item will shrink when space is small. -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+<!-- .item{
+    flex-shrink: 1;
+} -->
+
+<!-- Examples :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .a{
+    flex-shrink: 1;
+}
+.b{
+    flex-shrink: 0;
+} -->
+
+<!-- Output :-  -->
+
+<!-- A shrinks -->
+<!-- B does NOT shrink -->
+
+<!-- (2.4.12) Flex-basis :-  -->
+            <!-- Flex-basis defines the initial size of a flex item before growing or shrinking. -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .item{
+    flex-basis: 200px;
+} -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+    flex-basis: 150px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Each box starts with 150px width. -->
+
+<!-- Combined Example of Grow, shrink, basis :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    display:flex;
+}
+.a{
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis:100px;
+}
+.b{
+    flex-grow:2;
+    flex-shrink:0;
+    flex-basis:100px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- B becomes larger
+A shrinks if needed
+B never shrinks -->
+
+<!-- (2.5) CSS Grid :-  -->
+            <!-- CSS Grid is a layout system used to arrange elements in rows and columns at the same time. -->
+            <!-- CSS Grid is a 2D layout system used to arrange items in rows and columns together.  -->
+            <!-- It is powerful for: -->
+                    <!-- Website layouts -->
+                    <!-- Dashboards -->
+                    <!-- Image galleries -->
+                    <!-- UI grids (like YouTube, Instagram) -->
+                    <!-- Flexbox = 1D (row OR column) -->
+                    <!-- Grid = 2D (row AND column) -->
+
+<!-- There are 9 types of CSS Grid. They are :-  -->
+<!-- (2.5.1) Grid Container -->
+<!-- (2.5.2) Grid Items -->
+<!-- (2.5.3) Grid-template-columns -->
+<!-- (2.5.4) Grid-template-rows -->
+<!-- (2.5.5) Gap -->
+<!-- (2.5.6) Grid-column -->
+<!-- (2.5.7) Grid-row -->
+<!-- (2.5.8) Justify-items -->
+<!-- (2.5.9) Align-items -->
+<!-- (2.5.10) Z-Index  -->
+<!-- (2.5.11) Visibility  -->
+<!-- (2.5.12) Responsive Layout Basics  -->
+
+<!-- (2.5.1) Grid Container :-  -->
+            <!-- The parent element with display: grid is called a grid container.  -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+  display: grid;
+} -->
+ 
+<!-- Line by line
+display: grid = activates grid system -->
+
+<!-- (2.5.2) Grid Items :-  -->
+            <!-- All direct children inside grid container are grid items.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container">
+  <div>1</div>
+  <div>2</div>
+</div> -->
+
+<!-- (2.5.3) Grid-template-columns :-  -->
+            <!-- Defines number and width of columns.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- grid-template-columns: 100px 100px 100px;  -->
+
+<!-- grid-template-columns: 1fr 2fr 1fr;  -->
+
+<!-- fr = fraction of space  -->
+
+<!-- Line by line
+First column = 100px
+Second column = 100px
+Third column = 100px -->
+
+<!-- (2.5.4) Grid-template-rows :-   -->
+            <!-- Defines height of rows.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- grid-template-rows: 100px 200px; -->
+
+<!-- Line by line
+Row 1 = 100px
+Row 2 = 200px  -->
+
+<!-- (2.5.5) Gap :-  -->
+            <!-- Adds space between rows and columns.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- gap: 20px; -->
+
+<!-- Line by line
+20px space between items  -->
+
+<!-- (2.5.6) Grid-column :-  -->
+            <!-- Makes item span multiple columns.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- grid-column: 1 / 3;  -->
+
+<!-- Line by line -->
+<!-- Start at column 1 -->
+<!-- End before column 3 -->
+
+<!-- Output :-  -->
+
+<!-- [   BOX   ][ BOX ][ BOX ]  -->
+
+<!-- (2.5.7) Grid-row :-  -->
+            <!-- Makes item span multiple rows.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- grid-row: 1 / 3;  -->
+
+<!-- Line by line
+Start row 1
+End row 3 -->
+
+<!-- (2.5.8) Justify-items :-  -->
+            <!-- Aligns items horizontally inside grid cell.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- justify-items: center;  -->
+
+<!-- There are 4 types of Justify-items. They are :-  -->
+
+<!-- (2.5.8.1) Start -->
+<!-- (2.5.8.2) Center -->
+<!-- (2.5.8.3) End -->
+<!-- (2.5.8.4) Stretch -->
+
+<!-- (2.5.9) Align-items :-  -->
+            <!-- Aligns items vertically inside grid cell.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- align-items: center;  -->
+
+<!-- (2.5.10) Z-Index :-  -->
+            <!-- Controls stacking order (layers) of elements.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .box1{ z-index: 1; }
+.box2{ z-index: 10; } -->
+
+<!-- Higher number = on top -->
+
+<!-- Works only with:
+
+(2.5.10.1) Relative
+(2.5.10.2) Absolute
+(2.5.10.3) Fixed
+(2.5.10.4) Sticky -->
+
+<!-- (2.5.11) Visibility :-  -->
+            <!-- Controls whether element is visible or hidden  -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- visibility: hidden;  -->
+
+<!-- Difference between hidden and visible :-  -->
+
+<!-- Hidden → invisible but space remains
+Visible → shown normally -->
+
+<!-- (2.5.12) Responsive Layout Basics :-  -->
+            <!-- Responsive design means website adjusts to screen size.  -->
+            <!-- Tools: -->
+            <!-- Grid -->
+            <!-- Flexbox -->
+            <!-- Media Queries -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+ 
+<!-- 
+@media (max-width: 600px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+} -->
+
+<!-- Line by line
+If screen ≤ 600px → single column layout -->
+
+
+</body>
+</html>

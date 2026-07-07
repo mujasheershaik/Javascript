@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- (1)Introduction to CSS :-  -->
+            <!-- CSS means Cascading Style Sheets is a style sheet language which is used to design and style -->
+            <!-- web pages.  -->
+            <!-- It controls the appearance of HTML elements such as colors, fonts, spacing, images, buttons, 
+            layouts, animationsand responsiveness.  -->
+            <!-- CSS Introduced new features such as rounded corners, gradients, shadows, transition and  -->
+            <!-- animations, and media queries, makin web design more attractive and friendly.  -->
+
+<!-- (2)Types of CSS :-  -->
+
+<!-- (2.1) Inline CSS.  -->
+<!-- (2.2) Internal CSS.              -->
+<!-- (2.3) External CSS.  -->
+
+<!-- (2.1) Inline CSS :-  -->
+            <!-- CSS is written inside the HTML element using style attribute.  -->
+            <!-- It affects only that specific element.  -->
+
+<!-- (2.2) Internal CSS :-  -->
+            <!-- CSS is written inside the style tag in the head section of the HTML document.  -->
+            <!-- It affects only that single web page.  -->
+            
+<!-- (2.3) External CSS :-  -->
+            <!-- CSS is written in separate css file and linked to HTML page using link tag.  -->
+            <!-- The same CSS file can style multiple web pages.  -->
+
+<!-- CSS Selectors :-  -->
+            <!-- CSS Selectors are patterns used to select HTML elements so that CSS Styles can be applied 
+            to them.  -->
+            
+<!-- (3) Types of Selectors :-  -->
+            <!-- (3.1) Element tag selector.  -->
+            <!-- (3.2) Class selector.  -->
+            <!-- (3.3) Id selector.  -->
+            <!-- (3.4) Universal selector.  -->
+            <!-- (3.5) Group selector.  -->
+            <!-- (3.6) Descendant Selector.  -->
+            <!-- (3.7) Child Selector.  -->
+            <!-- (3.8) Adjacent Sibling Selector.  -->
+            <!-- (3.9) General Sibling Selector.  -->
+            <!-- (3.10) Attribute Selector.  -->
+            <!-- (3.11) Pseudo-class Selector.  -->
+            <!-- (3.12) Pseudo Element Selector.  -->
+
+<!-- (3.1) Element (tag) Selector :-  -->
+            <!-- It selects all elements with the same tag.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- p{
+    color: green
+} -->
+
+<!-- (3.2) Class Selector :-  -->
+            <!-- It selects the elements with the same class name.  -->
+            <!-- Class selector uses Pullstop (.) -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .container{
+    color: blue
+} -->
+
+<!-- (3.3) Id Selector :-  -->
+            <!-- It selects the elements with unique id.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- #{
+    color : red
+} -->
+
+<!-- (3.4) Universal Selector :-  -->
+            <!-- It selects all elements.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- *{
+    margin : 0;
+} -->
+
+<!-- (3.5) Group Selector :-  -->
+            <!-- It is used to select multiple elements.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- h1, h2{
+    color: lightgreen
+} -->
+
+<!-- (3.6) Descendant Selector :-  -->
+            <!-- It selects elements inside another element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div p{
+    color: purple;
+} -->
+
+<!-- (3.7) Child Selector :-  -->
+            <!-- Selects only direct child elements.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div >p{
+    color: gold;
+} -->
+
+<!-- (3.8) Adjacent Sibling Selector :-  -->
+            <!-- It selects only the next immediate sibling.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div+p{
+    color : orangle 
+} -->
+
+<!-- (3.9) General Sibling Selector :-  -->
+            <!-- It selects all sibling elements after a specified element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div~p{
+    color : navyblue;
+} -->
+
+<!-- (3.10) Attribute Selector :-  -->
+            <!-- An Attribute selector selects HTML elements based on their attribute or attribute values.  -->
+            <!-- An attribute gives extra information about HTML page.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <input type="text">  -->
+<!-- <input type="password">  -->
+<!-- <input type="email"> -->
+
+<!-- CSS :-  -->
+
+<!-- input[type = "text"]{
+    background-color : skyblue;
+} -->
+
+<!-- HTML :-  -->
+
+<!-- <a href="https.google.com">Google</a>  -->
+<!-- <a href="#">Home</a>  -->
+
+<!-- CSS :-  -->
+
+<!-- a[href]{
+    color : brown;
+} -->
+
+<!-- (3.11) Pseudo-class Selector :-  -->
+            <!-- A Pseudo-class selects an element when it is in a special state.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <button>ClickMe</button>  -->
+
+<!-- CSS :-  -->
+
+<!-- button :hover{
+    background-color:green;
+    color:white;
+} -->
+
+<!-- HTML :-  -->
+
+<!-- <input type="text">  -->
+
+<!-- CSS :-  -->
+<!-- 
+input:focus{
+    border : 3px solid blue ;
+} -->
+
+<!-- Common Pseudo Classes :-  -->
+
+<!-- Selector                                                       Meaning -->
+
+<!-- :hover                                                         Mouse over -->
+<!-- :focus                                                         Click inside input -->
+<!-- :active                                                        While clicking -->
+<!-- :visited                                                       Visited link -->
+<!-- :link                                                          Normal link -->
+<!-- :first-child                                                   First Child -->
+<!-- :last-child                                                    Last Child -->
+<!-- :nth-child()                                                   Specific Child -->
+
+<!-- (3.12) Pseudo-element Selector :-  -->
+            <!-- A Pseudo-element styles only a specific part of an HTML Element.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <p>Welcome to Pseudo-Element Selector</p>  -->
+
+<!-- CSS :-  -->
+
+<!-- p::first-letter{
+    font-size:40px;
+    color:red;
+} -->
+
+<!-- CSS:-  -->
+
+<!-- p::first-line{
+    color: blue;
+} -->
+
+<!-- CSS :-  -->
+
+<!-- p::before{
+    content: "*"
+} -->
+
+<!-- p::after{
+    content: "#"
+} -->
+
+<!-- Common Pseudo-elements :-  -->
+
+<!-- Selector                                                           Meaning -->
+
+<!-- ::before                                                           Insert content before -->
+<!-- ::after                                                            Insert content after -->
+<!-- ::first-letter                                                     First letter -->
+<!-- ::first-line                                                       first line -->
+<!-- ::selection                                                        selected text -->
+
+<!-- (4) CSS Specificity :-  -->
+            <!-- CSS Specificity is a set of rules that decided which style will be applied when more than  -->
+            <!-- one CSS rule targets the same element.  -->
+            <!-- When multiple css rules are written for the same element, CSS Specificity decides which rule -->
+            <!-- higher importance.  -->
+
+<!-- (5) CSS Colors :-  -->
+            <!-- CSS Colors are used to change the colors to the HTML elements such as, text, backgrounds,  -->
+            <!-- borders, and shadows.  -->
+            <!-- CSS colors are used to apply colors to different parts of a web page using CSS.  -->
+
+
+<!-- (6) CSS Backgrounds :-  -->
+            <!-- A Background is the area behind the content of an HTML Element. We can add a image or color to it.  -->
+
+<!-- (6.1) Background-color:-  -->
+            <!-- Sets the background color to an Element.  -->
+
+<!-- Example:-  -->
+
+<!-- background-color: blue  -->
+
+<!-- (6.2) Background-image :-  -->
+            <!-- Adds image to the background.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background-image : url("")  -->
+
+<!-- (6.3) Background-Repeat:-  -->
+            <!-- Repeats the background image -->
+
+<!-- Syntax:-  -->
+<!-- background-repeat :repeat  -->
+
+<!-- There are different types of Background-Repeat. They are :-  -->
+
+<!-- (6.3.1) Repeat - It repeats image in all directions.  -->
+<!-- (6.3.2) No-Repeat - It shows image only once.  -->
+<!-- (6.3.3) Repeat-x - It repeats image horizantly.  -->
+<!-- (6.3.4) Repeat-y - It repeats image vertically.  -->
+
+<!-- (6.4) Background-position :-  -->
+            <!-- It sets the position of the background image.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background-position : top right;  -->
+
+<!-- Types of Background-positions are :-  -->
+
+<!-- (6.4.1) Left  -->
+<!-- (6.4.2) Right -->
+<!-- (6.4.3) Top -->
+<!-- (6.4.4) Bottom -->
+<!-- (6.4.5) Center -->
+
+<!-- (6.5) Background-size :-  -->
+            <!-- It describes the size of the background.  -->
+
+<!-- There are two types of Background-size. They are :-  -->
+
+<!-- (6.5.1) Background-cover :-  -->
+            <!-- Makes the Image cover the entire background.  -->
+
+<!-- (6.5.2) Background-contain :-  -->
+            <!-- It displays the whole image without cropping it.  -->
+
+<!-- (6.6) Background Attachment :-  -->
+
+<!-- (6.6.1) Background-fixed :-  -->
+        <!-- It keeps the background image fixed while scrolling.  -->
+
+<!-- Syntax :-  -->
+<!-- background-attachment : fixed  -->
+
+<!-- (6.6.2) Background-Scroll :-  -->
+            <!-- Background moves with the page.  -->
+
+<!-- Syntax :-  -->
+<!-- background-attachment : scroll  -->
+
+<!-- (6.7) Background shorthand :-  -->
+            <!-- Its shorthand for all the properties.  -->
+
+<!-- Syntax :-  -->
+
+<!-- background : red url("application form.jpg") no-repeat center  -->
+
+<!-- red - color  -->
+
+<!-- url("application form.jpg") - Background image  -->
+
+<!-- No-repeat - Image will not repeat  -->
+
+<!-- (7) CSS Borders :-  -->
+             <!-- A border is a line that appears around an HTML Element.  -->
+            
+<!-- Syntax :-  -->
+
+<!-- h1{
+    border: 2px solid red
+} -->
+
+<!-- (7.1) Border Width :-  -->
+            <!-- 2px is the thickness (width) of the border.  -->
+
+<!-- Example :-  -->
+
+<!-- h1{
+    border-width: 4px;
+} -->
+
+<!-- (7.2)Border Style :-  -->
+            <!-- It defines the style of the border.  -->
+
+<!-- Border styles are:-  -->
+
+<!-- (7.2.1) Solid - Continous Line -->
+<!-- (7.2.2) Dotted - Dotted line  -->
+<!-- (7.2.3) Dashed - small dashes  -->
+<!-- (7.2.4) Double - Double line  -->
+<!-- (7.2.5) Groove - 3d groove effect -->
+<!-- (7.2.6) Ridge - Raised Border  -->
+<!-- (7.2.7) Inset - Looks pressed inside  -->
+<!-- (7.2.8) Outset - Looks pressed outside  -->
+<!-- (7.2.9) None - No Border  -->
+<!-- (7.2.10) Hidden - Hidden Border  -->
+
+<!-- (7.3) Border Color :-  -->
+            <!-- Sets the color of the border.  -->
+
+<!-- Example :-  -->
+<!-- Border- red -->
+
+<!-- h1{
+    border: 2px solid red
+} -->
+
+<!-- (7.4) Border-Radius :-  -->
+            <!-- Rounds the corners of the Border.  -->
+
+<!-- Example :-  -->
+
+<!-- Border-radius : 20px  -->
+
+<!-- (7.5) Individual side corner :-  -->
+
+<!-- (7.5.1) Border-Top :-  -->
+            <!-- It applies border only on the Top -->
+
+<!-- Syntax :-  -->
+
+<!-- border-top :- 2px solid blue  -->
+
+<!-- (7.5.2) Border-Right :-  -->
+            <!-- It applies border only on the Right -->
+
+<!-- Syntax :-  -->
+
+<!-- border-right :- 2px solid blue  -->
+
+<!-- (7.5.3) Bottom-Border :-  -->
+            <!-- It applies border only to the Bottom -->
+
+<!-- Syntax :-  -->
+
+<!-- border-bottom :- 2px solid blue  -->
+
+<!-- (7.5.4) Border-Left :-  -->
+            <!-- It applies border only on the Left-->
+
+<!-- Syntax :-  -->
+
+<!-- border-left :- 2px solid blue  -->
+
+<!-- (7.6) Border Shorthand :-  -->
+            <!-- Combines width, style, and color into one line.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    border: 3px solid green;
+} -->
+
+<!-- This is same as :-  -->
+
+<!-- div{
+    border-width:3px;
+    border-style:solid;
+    border-color: green;
+} -->
+
+<!-- (7.7) Border Collapse (For Tables) :-  -->
+            <!-- Removes the space between table borders.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS:-  -->
+
+<!-- table{
+    border-collapse: collapse;
+} -->
+
+<!-- (7.8) Border Spacing (For Tables) :-  -->
+            <!-- Adds space between table cell borders.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- table{
+    border-spacing:10px;
+}  -->
+
+<!-- (8) CSS Margins :-  -->
+            <!-- CSS Margin is the space outside an HTML element's border.  -->
+            <!-- It creates distance between one element and another. -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin: value;
+} -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin: 20px
+} -->
+
+<!-- Types of CSS Margins :-  -->
+            <!-- There are 6 types of CSS Margins. They are :-  -->
+
+            <!-- (8.1) Margin  -->
+            <!-- (8.2) Margin-Top   -->
+            <!-- (8.3) Margin-Right  -->
+            <!-- (8.4) Margin-Bottom  -->
+            <!-- (8.5) Margin-Left  -->
+            <!-- (8.6) Margin-Shorthand  -->
+            <!-- (8.7) Auto-Margin  -->
+
+<!-- (8.1) Margin :-  -->
+            <!-- Adds margin to all four sides. -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin:30px;
+} -->
+
+<!-- (8.2) Margin-Top :-  -->
+            <!-- Adds space only at the top.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin-top:30px;
+} -->
+
+<!-- (8.3) Margin-Right :-  -->
+            <!-- Adds space on the right side.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin-right:30px;
+} -->
+
+<!-- (8.4) Margin-Bottom :-  -->
+            <!-- Adds space below the element. -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin-bottom:30px;
+} -->
+
+<!-- (8.5) Margin-Left :-  -->
+            <!-- Adds space on the left side.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin-left: 30px;
+} -->
+
+<!-- (8.6) Margin-Shorthand :-  -->
+            <!-- Instead of writing four properties separately :-  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:30px;
+    margin-left:40px;
+} -->
+
+<!-- We can write this in shortform :-  -->
+
+<!-- div{
+    margin:10px 20px 30px 40px;
+} -->
+
+<!-- Order :-  -->
+            <!-- Top -->
+            <!-- Right -->
+            <!-- Bottom -->
+            <!-- Left -->
+
+<!-- TRBL ===> Top ===> Right ===> Bottom ===> Left  -->
+
+<!-- (8.7) Auto Margin :-  -->
+            <!-- margin:auto is used to center an element horizontally.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    width:300px;
+    margin:auto;
+} -->
+
+<!-- (9) CSS Padding :-  -->
+            <!-- CSS Padding is the space inside an HTML element, between the content and the border. -->
+            <!-- Padding = Space between the content and the border.  -->
+
+<!-- Syntax :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding: value;
+} -->
+
+<!-- Example :-  -->
+
+<!-- div{
+    padding:10px;
+} -->
+
+<!-- Types of CSS Padding :-  -->
+            <!-- There are 6 types of CSS Padding. They are :-  -->
+            <!-- (9.1) Padding -->
+            <!-- (9.2) Padding-Top -->
+            <!-- (9.3) Padding-Right  -->
+            <!-- (9.4) Padding-Bottom -->
+            <!-- (9.5) Padding-Left  -->
+
+<!-- (9.1) Padding :-  -->
+            <!-- Adds padding to all four sides.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding:20px;
+} -->
+
+<!-- (9.2) Padding-Top :-  -->
+            <!-- Adds space only at the top inside the element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding-top:20px;
+} -->
+
+<!-- (9.3) Padding-Right :-  -->
+            <!-- Adds space on the right side inside the element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding-right:20px;
+} -->
+
+<!-- (9.4) Padding-Bottom :-  -->
+            <!-- Adds space below the content.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding-bottom:20px;
+} -->
+
+<!-- (9.5) Padding-Left :-  -->
+            <!-- Adds space on the left side inside the element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding-left:20px;
+} -->
+
+<!-- (9.6) Padding Shorthand :-  -->
+            <!-- Instead of writing four properties separately :-  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    padding-top:10px;
+    padding-right:20px;
+    padding-bottom:30px;
+    padding-left:40px;
+} -->
+
+<!-- We can write the same code in shortform :-  -->
+
+<!-- div{
+    padding:10px 20px 30px 40px;
+} -->
+
+<!-- (10) CSS Box Model :-  -->
+            <!-- Every HTML Element is treated like a Rectangular Box in CSS. This box consists of Content, 
+             Padding, Border, and Margin.   -->
+
+<!-- It consists of Four. They are :-  -->
+<!-- (10.1) Content.  -->
+<!-- (10.2) Padding.  -->
+<!-- (10.3) Border.  -->
+<!-- (10.4) Margin.  -->
+
+<!-- (10.1) Content :-  -->
+            <!-- Content is the actual text, image, video inside the HTML Element.  -->
+
+<!-- Example :-  -->
+
+<!-- <h1>Hello World</h1> -->
+
+<!-- (10.2) Padding :-  -->
+            <!-- Padding is the space between the content and the border.  -->
+
+<!-- Example :-  -->
+
+<!-- padding : 10px;  -->
+<!-- It will create extra space between the content and border.  -->
+
+<!-- (10.3) Border :-  -->
+            <!-- Border is the line around the content and padding.  -->
+
+<!-- Example :-  -->
+
+<!-- border: 2px solid black  -->
+<!-- It will create a 2px thickness line with black color around the content and padding -->
+
+<!-- (10.4) Margin :-  -->
+            <!-- Margin is the space outside the border.  -->
+            <!-- It creates distances between two elements.  -->
+
+<!-- Example :-  -->
+
+<!-- margin : 20px  -->
+<!-- Box Model Diagram :-  -->
+
+            <!-- Margin  -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Border -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Padding -->
+               <!-- | -->
+               <!-- | -->
+            <!-- Content -->
+
+<!-- (10.5) Width and Height :-  -->
+            <!-- Width describes the width of the element. -->
+            <!-- Height describes the height of the element.  -->
+
+<!-- Example :-  -->
+
+<!-- #container{
+    width: 100px;
+    height: 300px;
+} -->
+
+<!-- A container contains 100px width and 300px height.  -->
+
+<!-- (10.6) Box - Sizing (Content - Box and Border - Box) :-  -->
+            <!-- Box - Sizing controls how the browser calculates an element's width and height.  -->
+            
+<!-- Box - Sizing are of two types. They are :-  -->
+
+<!-- (10.6.1) Content - Box.  -->
+<!-- (10.6.2) Border Box.  -->
+
+<!-- (10.6.1) Content - Box :-  -->
+            <!-- Only the content size is considered for width and height.  -->
+            <!-- Width/height apply only to content.  -->
+            <!-- Padding and border are added outside the specified width/height.  -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+    box-sizing : content-box;
+    width : 200px;
+    padding: 20px;
+    border: 5px solid black
+} -->
+
+<!-- Content = 200px  -->
+<!-- Padding = 20 + 20 = 40px -->
+<!-- Border = 5 + 5 = 10 px  -->
+
+<!-- Total width = 250 px  -->
+
+<!-- (10.6.2) Border Box :-  -->
+            <!-- The Width includes :- -->
+            <!-- (*) Content  -->
+            <!-- (*) Padding  -->
+            <!-- (*) Border  -->
+    <!-- The Total width remains equal to specified width.  -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+    padding : 20px;
+    border : 5px solid black;
+    box-sizing : border-box;
+} -->
+
+<!-- content + padding + border = 200px  -->
+<!-- Total width = 200px -->
+
+<!-- (11) CSS Float :-  -->
+            <!-- CSS Float is a CSS property used to move an HTML element to the left or right -->
+            <!-- of its container. Other content, such as text or images, flows (wraps) around -->
+            <!-- the floated element. -->
+            <!-- CSS Float is used to position an element on the left or right side of its container  -->
+            <!-- while allowing other content to wrap around it. -->
+            <!-- Before Flexbox and CSS Grid, developers used float to create layouts like side-by-side columns.  -->
+            <!-- Float is used to place elements side by side.  -->
+
+<!-- Syntax :-  -->
+
+<!-- selector{
+    float:left;
+}  -->
+
+    <!-- (OR) -->
+
+<!-- selector{
+    float:right;
+}  -->
+
+<!-- There are mainly four types :- -->
+<!-- (11.1)Left -->
+<!-- (11.2)Right -->
+<!-- (11.3)None -->
+<!-- (11.4)Inherit (less commonly used) -->
+
+<!-- (11.1) Float : Left :-  -->
+            <!-- Moves the element to the left side of its parent container. -->
+            <!-- Other content appears on the right. -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">Box</div> -->
+<!-- <p>Hello CSS Layout</p> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+width:100px;
+height:100px;
+background:red;
+float:left;
+margin-right:10px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The box moves to the left, and the text wraps beside it.  -->
+
+<!-- (11.2) Float : Right :-  -->
+            <!-- Moves the element to the right side of its container. -->
+
+<!-- Example :-  -->
+
+<!-- .box{
+float:right;
+} -->
+
+<!-- (11.3) Float : None :-  -->
+            <!-- Removes floating.  -->
+            <!-- This is the default value. -->
+            <!-- The element behaves normally and does not float. -->
+            
+<!-- Example :-  -->
+
+<!-- .box{
+float:none;
+} -->
+
+<!-- (11.4) Float : Inherit :-  -->
+            <!-- The element inherits the float value from its parent element.  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- div{
+    float:inherit;
+} -->
+
+<!-- Examples of Float :-  -->
+
+<!-- When all child elements are floated, the parent container may collapse (its height becomes zero).  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="container"> -->
+<!-- <div class="box"></div> -->
+<!-- </div> -->
+
+<!-- CSS:-  -->
+
+<!-- .container{
+border:2px solid black;
+} -->
+
+<!-- .box{
+float:left;
+width:100px;
+height:100px;
+background:red;
+} -->
+
+<!-- (12) CSS Position :- -->
+            <!-- The Position Property tell the browser how an HTML Element is placed on the web page.  -->
+            <!-- It works with these properies :-  -->
+            <!-- (*) Top  -->
+            <!-- (*) Right  -->
+            <!-- (*) Left  -->
+            <!-- (*) Bottom  -->
+            <!-- These properties move the element from its normal position. -->
+
+<!-- Syntax :-  -->
+
+<!-- selector{
+    position : value;
+} -->
+
+<!-- There are 5 types of Position Property. They are :-  -->
+
+<!-- (12.1) Static -->
+<!-- (12.2) Relative -->
+<!-- (12.3) Absolute  -->
+<!-- (12.4) Fixed  -->
+<!-- (12.5) Sticky  -->
+
+<!-- (12.1) Static (Default) :-  -->
+            <!-- Static is the default position of every html page.  -->
+            <!-- Elements stay in the normal document flow.  -->
+            <!-- Top, Left, Right and Bottom do not work.  -->
+
+<!-- Example :- -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">BOX</div>  -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position : static;
+    top : 50px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The BOX doesn't move, because top has no effect on static element.  -->
+
+<!-- (12.2) Relative :-  -->
+            <!-- A relative element stays in the normal document flow, but we can move it using top, right, left   -->
+            <!-- and bottom.  -->
+            <!-- It's original place is still reserved.  -->
+            
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="box">BOX</div> -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position:relative;
+    left:40px;
+    top:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Before :-  -->
+
+<!-- BOX  -->
+
+<!-- After :-  -->
+
+            <!-- BOX -->
+
+<!-- The box moves 40px to the right and 20px down, but its original position is still kept.  -->
+
+<!-- (12.3) Absolute :-  -->
+            <!-- An absolute element is removed from the normal document flow.  -->
+            <!-- It is positioned relative to its nearest positioned parent  -->
+            <!-- (a parent with position: relative, absolute, fixed, or sticky). -->
+            <!-- If no such parent exists, it is positioned relative to the page.  -->
+
+<!-- Example :-  -->
+
+<!-- HTML :-  -->
+
+<!-- <div class="parent"> -->
+    <!-- <div class="child">Box</div> -->
+<!-- </div> -->
+
+<!-- CSS :-  -->
+
+<!-- .parent{
+    position:relative;
+    width:300px;
+    height:200px;
+    border:2px solid black;
+} -->
+
+<!-- .child{
+    position:absolute;
+    top:20px;
+    right:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- The child is placed 20px from the top and 20px from the right of the parent.  -->
+
+<!-- (12.4) Fixed :-  -->
+            <!-- A fixed element stays in the same place even when the page is scrolled.  -->
+            <!-- It is positioned relative to the browser window.  -->
+            <!-- Common uses: -->
+                        <!-- Navigation bars -->
+                        <!-- Chat buttons -->
+                        <!-- BACK TO TOP buttons -->
+            
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .box{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+} -->
+
+<!-- Output :-  -->
+
+<!-- Even when we scroll, the box remains at the bottom-right corner. -->
+
+<!-- (12.5) Sticky :-  -->
+            <!-- A sticky element behaves like relative until a certain scroll position is reached. -->
+            <!-- Then it behaves like fixed. -->
+            <!-- It is commonly used for: -->
+                        <!-- (*) Sticky headers -->
+                        <!-- (*) Section Titles  -->
+                        <!-- (*) Navigation menus  -->
+
+<!-- Example :-  -->
+
+<!-- CSS :-  -->
+
+<!-- .header{
+    position:sticky;
+    top:0;
+    background:blue;
+    color:white;
+} -->
+
+<!-- Output :-  -->
+
+<!-- At the top of the page, the header is in its normal position.  -->
+<!-- As you scroll, once it reaches the top, it stays there. -->
+</body>
+</html>
