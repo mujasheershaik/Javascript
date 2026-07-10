@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.281);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #eaf7eb;
+}
+
+.card::before{
+    animation: shadow 1.6s ease-in-out infinite both;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 50%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    bottom: 2rem;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.205);
+    content: "";
+    height: 0.5rem;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+}
+.square{
+    background-color: tomato;
+    width: 5rem;
+    height: 5rem;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.down{
+    animation: down 1.6s ease-in infinite both;
+    bottom: 2rem;
+    position: absolute;
+}
+
+.down .up{
+    animation: up 1.6s ease-in-out infinite both;
+}
+
+.down .up .squeeze{
+    animation: squeeze 1.6s cubic-bezier(0.72, 0.03, 0.28, 0.97) infinite both;
+    transform-origin: 50% 100%;
+
+}
+
+.down .up .squeeze .rotate-in{
+    animation: rotate-in 1.6s ease-out infinite both;
+
+}
+
+.down .up .squeeze .rotate-in .rotate-out{
+    animation: rotate-in 1.6s ease-out infinite both;
+
+}
+
+/* Animations  */
+
+@keyframes down{
+    0%{
+        transform: translateY(-10rem);
+    }
+
+    20%,
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes up{
+    0%,
+    75%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-10rem);
+    }
+}
+
+@keyframes squeeze{
+    0%,
+    4%{
+        transform: scale(1);
+
+    }
+
+    45%{
+        transform: scale(1.8, 0.4);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate-in{
+    0%{
+        transform: rotate(-135deg);
+    }
+
+    20%,
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate-out{
+    0%,
+    80%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes shadow{
+    0%,
+    100%{
+        transform: scaleX(0.3);
+    }
+    45%,
+    80%{
+        transform: scaleX(0.8);
+    }
+}

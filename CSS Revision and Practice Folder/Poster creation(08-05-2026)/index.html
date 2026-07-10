@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (orientation: landscape){
+
+            .boxes{
+                box-sizing: border-box;
+                padding: 0 px;
+                margin: 5 px;
+                width: 800px;
+                height: 500px;
+                border: 5px solid black;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                /* grid-template-rows: 100px; */
+            }
+            #box1{
+                background: rgb(37, 186, 231);
+                grid-column-start:1;
+                grid-column-end: 3;
+                /* margin: 5px; */
+            }
+            #box2{
+                background: rgb(50, 236, 75);
+                grid-column: 1/2;
+            }
+            #box3{
+                background: rgb(211, 240, 51);
+                grid-column: 2/3;
+            }
+            #box4{
+                background: rgb(238, 26, 220);
+                grid-column: 3/4;
+            }
+            #box5{
+                background: rgb(168, 173, 245);
+                grid-column: 1/4;
+            }
+            #box6{
+                background: rgb(248, 129, 129);
+                grid-column: 1/4;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" id="box1">
+            HEADER
+        </div>
+        <div class="box" id="box2">
+            FEATURE
+        </div>
+        <div class="box" id="box3">
+            FEATURE
+        </div>
+        <div class="box" id="box4">
+            FEATURE
+        </div>
+        <div class="box" id="box5">
+            CONTENT
+        </div>
+        <div class="box" id="box6">
+            SIGN UP
+        </div>
+
+    </div>
+</body>
+</html>
