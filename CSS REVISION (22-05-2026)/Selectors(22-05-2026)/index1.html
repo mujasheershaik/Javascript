@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            color: blue;
+        }
+
+        #box3{
+            box-sizing: border-box;
+            background: #b45959;
+            min-width: 60px;
+            min-height: 40px;
+            border: black solid;
+            padding: 5px;
+        }
+
+        #box1{
+            box-sizing: content-box;
+            background-color: #d83f3f;
+            min-width: 60px;
+            min-height: 40px;
+            border: black solid 4px;
+            padding: 5px;
+            margin: 20px;
+        }
+
+        #box2{
+            box-sizing: content-box;
+            background-color: #d83f3f;
+            min-width: 60px;
+            min-height: 40px;
+            border: black solid 4px;
+            /* padding: 5px; */
+            margin: 20px;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+    <p id="one" style="color: aquamarine;">Lorem ipsum dolor sit, 
+        amet consectetur adipisicing elit. Quam corporis praesentium 
+        repellat inventore error voluptate quisquam obcaecati rerum 
+        aspernatur, harum incidunt. Laudantium reiciendis omnis 
+        inventore perferendis ipsam nulla harum veritatis!</p>
+
+    <p style="background-color: blue; border: black solid 2px;">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Nam libero ipsam quos? Quasi voluptate asperiores, eos, 
+         quam error voluptas consequatur ipsam debitis quo excepturi 
+         et fugit optio ut nemo officia.</p>
+
+    </div>
+
+    <p style="background-color: blue; border: black solid 5px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Nam libero ipsam quos? Quasi voluptate asperiores, eos, 
+         quam error voluptas consequatur ipsam debitis quo excepturi 
+         et fugit optio ut nemo officia.</p>
+
+    <p style="background-color: blue;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+         Nam libero ipsam quos? Quasi voluptate asperiores, eos, 
+         quam error voluptas consequatur ipsam debitis quo excepturi 
+         et fugit optio ut nemo officia.</p>
+
+    <p style="background-color: aqua;color: red; border: black solid 5px; width: 50%; 
+    margin-left: 40px;">Hello! How are you?</p>
+
+    <p style="background-color: aqua;color: red; border: black solid 5px; width: 50%; 
+    margin-top: -20px;">Hi! How are you?</p>
+
+    <h1 id="box1">
+        This is content-box 
+
+    </h1>
+
+    <h1 id="box2">
+        This is content-box
+
+    </h1>
+
+     <h1 id="box3">
+        This is Border-box
+
+    </h1>
+
+    <button>
+        One
+    </button>
+
+    <button>
+        Two
+    </button>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!-- (1) Functional Components :-  -->
+            <!-- A Functional Component is a Javascript function that returns JSX.   -->
+            <!-- It is the simplest way to create React component.  -->
+            <!-- Function components can use Hooks like useState and useEffect.  -->
+            <!-- They are the most commonly used components in modern React.  -->
+
+<!-- Example :-  -->
+
+<!-- function Welcome(){
+    return <h1>Welcome to React</h1>
+} -->
+
+<!-- (2) Class Components :-  -->
+            <!-- A Class Component is created using an ES6 class.  -->
+            <!-- It extends React.Component  -->
+            <!-- It uses this keyword and lifecyle methods.  -->
+            <!-- It was commonly used before Hooks.  -->
+
+<!-- Example :-  -->
+
+<!-- class Welcome extends React.Component {
+    render(){
+        return <h1>Hello</h1>
+    }
+} -->
+
+<!-- (3) Fragments :-  -->
+            <!-- Fragments allow grouping multiple JSX elements without adding extra HTML tags.  -->
+            <!-- They keep DOM clean.  -->
+
+<!-- Example :-  -->
+
+<!-- <>
+<h1>Hello</h1>
+<p>Welcome</p>
+</> -->
+
+<!-- (4) Strict Mode :-  -->
+            <!-- Strict Mode is a Development Tool.  -->
+            <!-- It helps identifying potential problems in React application.  -->
+            <!-- It doesn't affect production.  -->
+
+<!-- Example :-  -->
+
+<!-- <React.StrictMode>
+    <App/>
+</React.StrictMode> -->
+
+<!-- (5) Calling Functions in JSX :-  -->
+            <!-- Functions can be called inside JSX using curly braces {}.  -->
+            <!-- The function's return value is displayed.  -->
+            
+<!-- Example :-  -->
+
+<!-- function greet (){
+    return "Hello"
+}
+
+<h1>{greet()}</h1> -->
+
+<!-- (6) Valid and Invalid syntax :-  -->
+            <!-- JSX must return one parent element.  -->
+            <!-- All tags must be properly closed.  -->
+
+<!-- Examples :-  -->
+
+<!-- Valid Syntax :- -->
+
+<!-- <div>
+    <h1>Hello</h1>
+</div> -->
+
+<!-- Invalid Syntax :-  -->
+
+<!-- <h1>Hello</h1> -->
+<!-- <p>Welcome</p> -->
+
+<!-- (7) JSX Expressions:-  -->
+            <!-- Javascript expressions can be written inside JSX using {}.  -->
+            <!-- React evaluates the expression and displays the result.  -->
+
+<!-- Example :-  -->
+
+<!-- const name = "John"  -->
+
+<!-- <h1>Hello{name}</h1> -->
+
+<!-- (8) State :-  -->
+            <!-- State stores the data that belongs to a component.  -->
+            <!-- When state changes, React automatically updates the UI.  -->
+            <!-- State is managed using useState in functional components.  -->
+            
+<!-- Example :-  -->
+
+<!-- const [count, setCount] = useState(0);  -->
+
+<!-- (9) Props :-  -->
+            <!-- Props (Properties) are used to pass data from one component to another.  -->
+            <!-- Props are read only. -->
+
+<!-- Example :-  -->
+
+<!-- <Welcome name = "Mujasheer" />  -->
+
+<!-- (10) Parent and Child Relationships :-  -->
+            <!-- The component sending data is called Parent Component.  -->
+            <!-- The component receiving data is called Child Component.  -->
+            <!-- Data normally froms from Parent to Child.  -->
+            
+<!-- Example :-  -->
+
+       <!-- App 
+             |
+             |  ===> Header
+             |
+             |  ===> Home
+             |
+             |  ===> Footer -->
+
+<!-- (11) Passing data from parent to child :-  -->
+            <!-- Data is passed using Props.  -->
+            <!-- The Parent sends values, and the child receives them.  -->
+
+<!-- Example :-  -->
+
+<!-- Parent :-  -->
+
+<!-- <Child name = "Mujasheer" />  -->
+
+<!-- Child :-  -->
+
+<!-- function Child(props){
+    return(
+        <h1>{props.name}</h1>
+    )
+} -->
+
+<!-- (12) Communication between components :-  -->
+            <!-- Components communicates in different ways :-  -->
+            <!-- Parent to child using Props.  -->
+            <!-- Child to parent using callback functions.  -->
+            <!-- Sibling to sibling through their common parent.  -->
+            <!-- Global communication using context api or redux.  -->
+
+<!-- Example :-  -->
+
+       <!-- Parent 
+              |
+              | ===> Child1
+              |
+              | ===> Child2 -->
+
+              

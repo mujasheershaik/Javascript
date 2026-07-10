@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .poster{
+            padding: 2px;
+            margin: 5px;
+            border: 5px black solid;
+            background: skyblue;
+        }
+        
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #header{
+            grid-column: 1/4;
+        }
+
+        #sidebar{
+            grid-column: 1/2;
+        }
+
+        #content{
+            grid-column: 2/4;
+        }
+        
+        #footer{
+            grid-column: 1/4;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main" style="background: orangered; width: 500px; height: 500px;">
+        <div class="poster" id="header">
+            Header
+        </div>
+        <div class="poster" id="sidebar">
+            Side Bar
+        </div>
+        <div class="poster" id="content">
+            Content
+        </div>
+        <div class="poster" id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
